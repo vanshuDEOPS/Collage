@@ -1,0 +1,1076 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+/* ====topbar==== */
+.topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(#d0d1d4, #f1f1f3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+    z-index: 3;
+
+}
+
+.logo img {
+    width: 70px;
+    margin-top: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #103565;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: rgb(3, 0, 16);
+    border-bottom: 2px solid #f8c838;
+}
+
+.login-btn {
+    border: none;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #031941, #103a7d);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(59, 130, 246, .45);
+}
+
+/* =========================
+   UNIVERSITY HERO SECTION
+========================= */
+
+.uni-hero {
+    min-height: 500px;
+
+    padding: 55px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.uni-hero-content {
+    width: 52%;
+
+    max-width: 600px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    background: #e8f0ff;
+
+    color: #174ea6;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    margin-bottom: 17px;
+}
+
+.uni-hero-content h1 {
+    color: #17233c;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.15;
+
+    margin-bottom: 17px;
+}
+
+.uni-hero-content h1 span {
+    display: block;
+
+    color: #1d5fd1;
+}
+
+.uni-hero-content p {
+    max-width: 500px;
+
+    color: #68758a;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.hero-btn,
+.hero-outline-btn {
+    padding: 11px 21px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+.hero-btn {
+    background: #1d5fd1;
+
+    color: white;
+
+    box-shadow:
+        0 7px 18px rgba(29, 95, 209, .2);
+}
+
+.hero-btn:hover {
+    background: #174a9f;
+
+    transform: translateY(-2px);
+}
+
+.hero-outline-btn {
+    color: #1d5fd1;
+
+    background: white;
+
+    border: 1px solid #cbdaf3;
+}
+
+.hero-outline-btn:hover {
+    background: #edf4ff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RIGHT IMAGE
+========================= */
+
+.uni-hero-image {
+    width: 43%;
+
+    max-width: 500px;
+
+    height: 380px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+
+/* Image */
+
+.uni-hero-image img {
+    width: 400px;
+    height: 320px;
+
+    position: relative;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 7px solid white;
+
+    box-shadow:
+        0 15px 35px rgba(30, 50, 80, .15);
+}
+
+
+/* =========================
+   INFO CARD
+========================= */
+
+.hero-info-card {
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 10px;
+
+    left: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 17px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 25px rgba(30, 50, 80, .15);
+}
+
+.hero-info-card>span {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #edf4ff;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+}
+
+.hero-info-card div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.hero-info-card strong {
+    color: #17233c;
+
+    font-size: 11px;
+}
+
+.hero-info-card small {
+    color: #7b8799;
+
+    font-size: 9px;
+
+    margin-top: 2px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .uni-hero {
+        min-height: auto;
+
+        padding: 55px 5%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .uni-hero-content {
+        width: 100%;
+    }
+
+    .uni-hero-content p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .uni-hero-image {
+        width: 100%;
+
+        height: 350px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .uni-hero {
+        padding: 45px 20px;
+    }
+
+    .uni-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn,
+    .hero-outline-btn {
+        width: 190px;
+
+        text-align: center;
+    }
+
+    .uni-hero-image {
+        height: 280px;
+    }
+
+    .uni-hero-image img {
+        width: 290px;
+        height: 230px;
+    }
+
+    .hero-info-card {
+        left: 0;
+
+        bottom: 0;
+    }
+}
+
+.uni-hero {
+    min-height: 500px;
+
+    padding: 55px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background: linear-gradient(135deg,
+            #bccadf 0%,
+            #d5dce4 40%,
+            #ebe4e4 75%,
+            #d8e5f9 100%);
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   COURSE FEE SECTION
+========================= */
+
+.fee-section {
+    width: 100%;
+
+    padding: 100px 7%;
+
+    background: #f7f9fc;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.fee-heading {
+    max-width: 650px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.fee-heading>span {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    background: #e8f0ff;
+
+    color: #174ea6;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+.fee-heading h2 {
+    color: #17233c;
+
+    font-size: clamp(35px, 4vw, 50px);
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+.fee-heading h2 strong {
+    color: #1d5fd1;
+
+    font-weight: 700;
+}
+
+.fee-heading p {
+    color: #68758a;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FEE CONTAINER
+========================= */
+
+.fee-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   FEE CARD
+========================= */
+
+.fee-card {
+    position: relative;
+
+    padding: 35px 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf2;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(30, 50, 80, 0.07);
+
+    transition: 0.35s ease;
+}
+
+.fee-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(30, 50, 80, 0.12);
+}
+
+
+/* =========================
+   POPULAR CARD
+========================= */
+
+.fee-card.popular {
+    border: 2px solid #1d5fd1;
+
+    transform: translateY(-10px);
+}
+
+.fee-card.popular:hover {
+    transform: translateY(-17px);
+}
+
+.popular-label {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: 7px 18px;
+
+    background: #1d5fd1;
+
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.fee-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 10px auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #edf4ff;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+.fee-category {
+    color: #1d5fd1;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.fee-card h3 {
+    color: #17233c;
+
+    font-size: 21px;
+
+    margin: 9px 0 22px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.fee-price {
+    padding: 18px 10px;
+
+    margin-bottom: 22px;
+
+    background: #f7faff;
+
+    border-radius: 12px;
+}
+
+.fee-price small {
+    display: block;
+
+    color: #7b8799;
+
+    font-size: 10px;
+
+    margin-bottom: 4px;
+}
+
+.fee-price strong {
+    color: #173e8c;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+.fee-price span {
+    color: #7b8799;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.fee-card ul {
+    list-style: none;
+
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+.fee-card ul li {
+    color: #66748a;
+
+    font-size: 12px;
+
+    padding: 9px 0;
+
+    border-bottom: 1px solid #edf0f5;
+}
+
+.fee-card ul li::first-letter {
+    color: #1d5fd1;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.fee-btn {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    background: #1d5fd1;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.fee-btn:hover {
+    background: #174a9f;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BOTTOM NOTE
+========================= */
+
+.fee-note {
+    max-width: 850px;
+
+    margin: 45px auto 0;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #eef5ff;
+
+    border: 1px solid #dbe8ff;
+
+    border-radius: 10px;
+}
+
+.fee-note>span {
+    width: 28px;
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1d5fd1;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+.fee-note p {
+    color: #60708a;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .fee-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fee-card.popular {
+        transform: none;
+    }
+
+    .fee-card.popular:hover {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .fee-section {
+        padding: 70px 20px;
+    }
+
+    .fee-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fee-card.popular {
+        transform: none;
+    }
+
+    .fee-heading {
+        margin-bottom: 45px;
+    }
+
+    .fee-note {
+        align-items: flex-start;
+    }
+}
+
+/* ====footer==== */
+.wow-footer {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#9498a4, #d4d4d5);
+    padding: 70px 8% 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.brand .logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.brand h1 {
+    font-size: 38px;
+    color: #38bdf8;
+}
+
+.brand p {
+    color: #103565;
+
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+
+.links h3,
+.footer-contact h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #facc15;
+}
+
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #103565;
+    margin: 12px 0;
+    transition: .3s;
+}
+
+.links a:hover {
+    color: #103565;
+    transform: translateX(10px);
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+}
+
+.social a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .15);
+    color: #103565;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social a:hover {
+    background: #22d3ee;
+    transform: translateY(-8px);
+}
+
+.footer-contact p {
+    margin: 15px 0;
+    color: #103565;
+
+}
+
+.footer-contact a {
+    color: #103565;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+.footer-contact button {
+    margin-top: 20px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-contact button:hover {
+    background: #22d3ee;
+    color: white;
+    transform: scale(1.05);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(119, 115, 115, 0.2);
+    color: #103565;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* ===topbar==== */
+    .logo img {
+        margin-left: -70px;
+        width: 90px;
+    }
+
+    .nav-links {
+        margin-left: px;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 10.3px;
+    }
+
+    .login-btn {
+        padding: 2px 5px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    /* ====hero==== */
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 25px;
+    }
+
+    .pricing-card ul li {
+        font-size: 14px;
+    }
+
+    .pricing-section {
+        display: block;
+        width: 100%;
+    }
+
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .pricing-card h2 {
+        font-size: 20px;
+    }
+
+    .badge {
+        width: 200px;
+        padding: 8px;
+
+    }
+
+
+    /* ====footer==== */
+    .wow-footer {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .brand .logo {
+        width: 20px;
+        height: 20px;
+        margin-left: 60px;
+    }
+
+    .brand h1 {
+        font-size: 18px;
+    }
+
+    .brand p {
+        font-size: 10px;
+    }
+
+    .links h3,
+    .footer-contact h3 {
+        font-size: 12px;
+    }
+
+    .links a {
+        font-size: 10px;
+    }
+
+    .social {
+        font-size: 10px;
+    }
+
+    .social a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-contact p {
+        font-size: 10px;
+    }
+
+    .footer-contact button {
+        padding: 7px 14px;
+        font-size: 10px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+
+}

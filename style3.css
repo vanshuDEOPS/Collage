@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+
+/* ====topbar==== */
+.topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(#d0d1d4, #f1f1f3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+    z-index: 3;
+
+}
+
+.logo img {
+    width: 70px;
+    margin-top: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #103565;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: rgb(3, 0, 16);
+    border-bottom: 2px solid #f8c838;
+}
+
+.login-btn {
+    border: none;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #031941, #103a7d);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(59, 130, 246, .45);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+/* =========================
+   ABOUT OVERLAY
+========================= */
+
+.about-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(120deg,
+            rgba(57, 77, 125, 0.48),
+            rgba(108, 115, 165, 0.30),
+            rgba(220, 220, 232, 0.16)),
+        url("https://www.ahu.ac.in/images/about-img4.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.about-content {
+    color: #ffffff;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   ABOUT LABEL
+========================= */
+
+.about-label {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    border-radius: 25px;
+
+    color: #304b82;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: .8px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(20, 40, 80, 0.12);
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.about-content h2 {
+    max-width: 650px;
+
+    color: #ffffff;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 3px 12px rgba(20, 35, 70, 0.30);
+}
+
+
+.about-content h2 span {
+    display: block;
+
+    color: #dce9ff;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 3px 12px rgba(20, 35, 70, 0.35);
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.about-content p {
+    max-width: 580px;
+
+    color: #f5f8ff;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+
+    margin-bottom: 13px;
+
+    text-shadow:
+        0 2px 8px rgba(20, 35, 70, 0.30);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.about-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 15px;
+
+    padding: 12px 23px;
+
+    background: #ffffff;
+
+    color: #234c96;
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 22px rgba(20, 40, 80, 0.20);
+
+    transition: .3s ease;
+}
+
+
+.about-btn:hover {
+    transform: translateY(-3px);
+
+    background: #eaf2ff;
+
+    color: #153d82;
+
+    box-shadow:
+        0 12px 28px rgba(20, 40, 80, 0.25);
+}
+
+
+/* =========================
+   RIGHT INFO
+========================= */
+
+.about-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+
+/* =========================
+   INFO CARD
+========================= */
+
+.about-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 22px;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    border: 1px solid rgba(255, 255, 255, 0.40);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 8px 25px rgba(20, 40, 80, 0.12);
+
+    transition: .35s ease;
+}
+
+
+.about-card:hover {
+    background: rgba(255, 255, 255, 0.30);
+
+    border-color: rgba(255, 255, 255, 0.60);
+
+    transform: translateX(8px);
+
+    box-shadow:
+        0 12px 30px rgba(20, 40, 80, 0.18);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.about-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    color: #315ca7;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 6px 18px rgba(20, 40, 80, 0.15);
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.about-card h3 {
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+    text-shadow:
+        0 2px 7px rgba(20, 35, 70, 0.30);
+}
+
+
+.about-card p {
+    color: #eef4ff;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    text-shadow:
+        0 1px 5px rgba(20, 35, 70, 0.25);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-section {
+        min-height: auto;
+        padding: 75px 6%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-info {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .about-section {
+        padding: 60px 20px;
+        background-attachment: scroll;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .about-card {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .about-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 19px;
+    }
+}
+
+
+
+
+/* ====footer==== */
+.wow-footer {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#9498a4, #d4d4d5);
+    padding: 70px 8% 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.brand .logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.brand h1 {
+    font-size: 38px;
+    color: #38bdf8;
+}
+
+.brand p {
+    color: #103565;
+
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+
+.links h3,
+.footer-contact h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #facc15;
+}
+
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #103565;
+    margin: 12px 0;
+    transition: .3s;
+}
+
+.links a:hover {
+    color: #103565;
+    transform: translateX(10px);
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+}
+
+.social a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .15);
+    color: #103565;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social a:hover {
+    background: #22d3ee;
+    transform: translateY(-8px);
+}
+
+.footer-contact p {
+    margin: 15px 0;
+    color: #103565;
+
+}
+
+.footer-contact a {
+    color: #103565;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+.footer-contact button {
+    margin-top: 20px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-contact button:hover {
+    background: #22d3ee;
+    color: white;
+    transform: scale(1.05);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(119, 115, 115, 0.2);
+    color: #103565;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* ===topbar==== */
+    .logo img {
+        margin-left: -70px;
+        width: 90px;
+    }
+
+    .nav-links {
+        margin-left: px;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 10.3px;
+    }
+
+    .login-btn {
+        padding: 2px 5px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    /* ====about==== */
+    .about-contant h1 {
+        width: 90%;
+    }
+
+    .about-card {
+        top: 100px;
+        display: block;
+    }
+
+    /* ====footer==== */
+    .wow-footer {
+
+        width: 100%;
+        margin-top: 650px;
+
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .brand .logo {
+        width: 20px;
+        height: 20px;
+        margin-left: 60px;
+    }
+
+    .brand h1 {
+        font-size: 18px;
+    }
+
+    .brand p {
+        font-size: 10px;
+    }
+
+    .links h3,
+    .footer-contact h3 {
+        font-size: 12px;
+    }
+
+    .links a {
+        font-size: 10px;
+    }
+
+    .social {
+        font-size: 10px;
+    }
+
+    .social a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-contact p {
+        font-size: 10px;
+    }
+
+    .footer-contact button {
+        padding: 7px 14px;
+        font-size: 10px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+
+}
